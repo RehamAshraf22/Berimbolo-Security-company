@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berimbolo Security</title>
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <div id="navbar">
+            <div class="logo">Berimbolo Security</div>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Products</a></li>
+                    <li><a href="#gallery">Best Sellers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Welcome To <span class="primary-text"> Berimbolo Security </span> Company</h1>
+            <p>Here you can find the latest surveillance cameras in the world.</p>
+            <a href="#contact" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+    <!-- Header End -->
+    <main>
+        <!-- About Section Start -->
+<section id="about">
+    <div class="container">
+        <div class="title">
+            <h2>About Berimbolo Security</h2>
+            <p>Over 25 years of excellence in securing lives and properties.</p>
+        </div>
+        <div class="about-content">
+            <div>
+                <p>Berimbolo Security is a global leader in cutting-edge security solutions. Since our inception, 
+                    we have been dedicated to providing top-notch surveillance systems, tailored to meet diverse needs.</p>
+                <p>We specialize in innovative cameras, access control systems, and alarm solutions to protect your home,
+                    office, and business facilities. Trusted by thousands worldwide, we ensure safety and peace of mind.</p>
+                <div id="more-text" style="display: none;">
+                    <p>With decades of experience, our engineers design and implement state-of-the-art security technologies 
+                        to provide unmatched protection. We offer customizable security packages for every type of property.</p>
+                    <p>Our mission is to continually innovate and adapt to the changing landscape of security needs, 
+                        ensuring that our clients always have the most advanced protection solutions available.</p>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-secondary" onclick="toggleText()">LEARN MORE</a>
+            </div>
+            <img src="./images/ccc6.png" alt="Surveillance Camera" class="animated-image">
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleText() {
+        var moreText = document.getElementById("more-text");
+        var button = document.querySelector(".btn.btn-secondary");
+        if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            button.textContent = "SHOW LESS";
+        } else {
+            moreText.style.display = "none";
+            button.textContent = "LEARN MORE";
+        }
+    }
+</script>
+<style>
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .text-content {
+        flex: 1;
+    }
+
+    .animated-image {
+        width: 50%; 
+        transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .animated-image:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        .animated-image {
+            width: 80%; 
+            margin-top: 20px;  
+        }
+    }
+</style>
+
+
+
+        <!-- About Section End -->
+        <!-- Offers Section Start -->
+        <section id="offers">
+            <div class="container">
+                <div class="title">
+                    <h2>Special Offers</h2>
+                    <p>Enhance your security with our exclusive deals!</p>
+                </div>
+                <div class="offers-items">
+                    <div>
+                        <img src="./images/c7.jpg" alt="Wireless Camera">
+                        <div>
+                            <h3>Wireless HD Camera</h3>
+                            <p>Stay connected with high-definition surveillance at an unbeatable price.</p>
+                            <p><del>$150.00</del> <span class="primary-text">$120.00</span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/c4.jpg" alt="Door Lock">
+                        <div>
+                            <h3>Smart Door Lock</h3>
+                            <p>Upgrade your home security with our easy-to-use smart locks.</p>
+                            <p><del>$200.00</del> <span class="primary-text">$170.00</span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/c5.jpg" alt="Motion Detector">
+                        <div>
+                            <h3>Motion Detector</h3>
+                            <p>Detect and deter unauthorized access with precision technology.</p>
+                            <p><del>$80.00</del> <span class="primary-text">$60.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Offers Section End -->
+        <!-- Menu Section Start -->
+        <section id="menu">
+            <div class="container">
+                <div class="title">
+                    <h2>Our Products</h2>
+                    <p>Top-of-the-line security equipment for every need.</p>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-items-left">
+                        <div class="menu-item">
+                            <img src="./images/c3.jpg" alt="Outdoor Camera">
+                            <div>
+                                <h3>OUTDOOR CAMERA <span class="primary-text">$120.00</span></h3>
+                                <p>High-quality camera with night vision and motion detection features.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c4.jpg" alt="Indoor Camera">
+                            <div>
+                                <h3>INDOOR CAMERA <span class="primary-text">$90.00</span></h3>
+                                <p>Compact design with HD resolution and two-way audio and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c5.jpg" alt="Smart Lock">
+                            <div>
+                                <h3>SMART LOCK <span class="primary-text">$150.00</span></h3>
+                                <p>Advanced biometric security with remote access capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c7.jpg" alt="Alarm System">
+                            <div>
+                                <h3>ALARM SYSTEM <span class="primary-text">$200.00</span></h3>
+                                <p>Reliable home alarm system to keep your property secure and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/ccc6.jpg" alt="Surveillance Kit">
+                            <div>
+                                <h3>SURVEILLANCE KIT <span class="primary-text">$500.00</span></h3>
+                                <p>Complete package with cameras, NVR, and installation support.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c4.jpg" alt="PTZ Camera">
+                            <div>
+                                <h3>PTZ CAMERA <span class="primary-text">$400.00</span></h3>
+                                <p>Pan, tilt, and zoom camera for wide-area coverage and High-quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-items-right">
+                        <div class="menu-item">
+                            <img src="./images/c9.jpg" alt="Dome Camera">
+                            <div>
+                                <h3>DOME CAMERA <span class="primary-text">$180.00</span></h3>
+                                <p>Vandal-resistant design with wide-angle monitoring and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c3.jpg" alt="Bullet Camera">
+                            <div>
+                                <h3>BULLET CAMERA <span class="primary-text">$220.00</span></h3>
+                                <p>Weatherproof camera ideal for outdoor use and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c4.jpg" alt="Access Control">
+                            <div>
+                                <h3>ACCESS CONTROL <span class="primary-text">$500.00</span></h3>
+                                <p>State-of-the-art biometric access management system and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c8.jpg" alt="Wireless Camera">
+                            <div>
+                                <h3>WIRELESS CAMERA <span class="primary-text">$150.00</span></h3>
+                                <p>Easy to install with seamless connectivity and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/c7.jpg" alt="Network Video Recorder">
+                            <div>
+                                <h3>NETWORK VIDEO RECORDER <span class="primary-text">$350.00</span></h3>
+                                <p>Secure storage for all your camera footage and High-quality.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./images/ccc6.jpg" alt="IP Camera">
+                            <div>
+                                <h3>IP CAMERA <span class="primary-text">$250.00</span></h3>
+                                <p>Streamlined IP cameras for high-definition video feeds.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-third"><a href="#">EXPLORE FULL MENU</a></button>
+            </div>
+        </section>
+
+        <!-- Daytime section end-->
+        <!-- Gallery Section Start -->
+<section id="gallery">
+    <div class="container">
+        <h2>Best Sellers</h2>
+        <div class="img-gallery">
+            <div class="img-container">
+                <img src="./images/ccc6.jpg" alt="gallery1">
+                <div class="info"><h3>OUTDOOR CAMERA <span class="primary-text">$120.00</span></h3>
+                                <p>High-quality camera with night vision and motion detection features.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c7.jpg" alt="gallery2">
+                <div class="info"><h3>INDOOR CAMERA <span class="primary-text">$90.00</span></h3>
+                                <p>Compact design with HD resolution and two-way audio and High-quality.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c3.jpg" alt="gallery3">
+                <div class="info"><h3>SMART LOCK <span class="primary-text">$150.00</span></h3>
+                                <p>Advanced biometric security with remote access capabilities.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c4.jpg" alt="gallery4">
+                <div class="info"><h3>ALARM SYSTEM <span class="primary-text">$200.00</span></h3>
+                                <p>Reliable home alarm system to keep your property secure and High-quality.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c5.jpg" alt="gallery5">
+                <div class="info"><h3>SURVEILLANCE KIT <span class="primary-text">$500.00</span></h3>
+                                <p>Complete package with cameras, NVR, and installation support.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/ccc6.jpg" alt="gallery6">
+                <div class="info"><h3>PTZ CAMERA <span class="primary-text">$400.00</span></h3>
+                                <p>Pan, tilt, and zoom camera for wide-area coverage and High-quality.</p></div>
+            </div>
+               <div class="img-container">
+                <img src="./images/c8.jpg" alt="gallery4">
+                <div class="info"><h3>DOME CAMERA <span class="primary-text">$180.00</span></h3>
+                                <p>Vandal-resistant design with wide-angle monitoring and High-quality.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c4.jpg" alt="gallery5">
+                <div class="info"><h3>BULLET CAMERA <span class="primary-text">$220.00</span></h3>
+                                <p>Weatherproof camera ideal for outdoor use and High-quality.</p></div>
+            </div>
+            <div class="img-container">
+                <img src="./images/c9.jpg" alt="gallery6">
+                <div class="info"><h3>NETWORK VIDEO RECORDER <span class="primary-text">$350.00</span></h3>
+                                <p>Secure storage for all your camera footage and High-quality.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Gallary Section End -->
+        <!-- Contact Section Start -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div>
+                            <h3>ADDRESS</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> Nasr City, Cairo, Egypt</p>
+                            <p><i class="fa-solid fa-phone"></i> Phone: 123456789</p>
+                            <p><i class="fa-regular fa-envelope"></i> support@Berimbolo_Security.com</p>
+                        </div>
+                        <div>
+                            <h3>WORKING HOURS</h3>
+                            <p>8:00 am to 11:00 pm on Weekdays</p>
+                        </div>
+                        <div>
+                            <h3>FOLLOW US</h3>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form id="contactForm">
+                        <input type="text" name="Name" id="name" placeholder="Full Name">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-third">SEND MESSAGE</button>
+                    </form>
+                    <div id="errorMessages"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </main>
+    <footer id="footer">
+        <p>Copyright &copy; 2023 All rights reserved | made by <b>
+            <a href="/Portfolio/main.html">Reham Ashraf Elsayed</a>
+        </b></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
